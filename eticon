@@ -5,14 +5,11 @@ subcommand="$(echo "${command}" | cut -s -d. -f2)"
 case "$OSTYPE" in
   solaris*) echo "SOLARIS" ;;
   darwin*)
-  OS="OSX"
-  echo $OS ;; 
+  OS="OSX" ;; 
   linux*)
-  OS="Linux"
-  echo $OS ;;
+  OS="Linux" ;;
   msys*)
-  OS="Windows"
-  echo $OS ;;
+  OS="Windows" ;;
   *)        echo "unknown: $OSTYPE" ;;
 esac
 
@@ -22,6 +19,16 @@ fi
 
 if [[ "${subcommand}" == "" ]]; then
     echo "Error: Command not found" 1>&2
+    exit 1
+fi
+
+if [[ "${subcommand}" == "version" ]]; then
+    echo "ETICON Core v1.0-beta"
+    exit 1
+fi
+
+if [[ "${subcommand}" == "update" ]]; then
+    git pull
     exit 1
 fi
 
