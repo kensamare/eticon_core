@@ -18,12 +18,12 @@ if [[ "${subcommand}" == "" ]]; then
 fi
 
 if [[ "${subcommand}" == "" ]]; then
-    echo "Error: Command not found" 1>&2
+    echo "Eticon Error: Command not found" 1>&2
     exit 1
 fi
 
 if [[ "${subcommand}" == "version" ]]; then
-    echo "ETICON Core v1.0.01-macOS"
+    echo "ETICON Core v1.0.0-macOS"
     exit 1
 fi
 
@@ -39,8 +39,10 @@ fi
 if [[ "${subcommand}" == "open" ]]; then
     echo "Open Start" 1>&2
     if [[ "$OS" == "OSX" ]]; then
-    ETICON_PATH=$(which eticon)
-    open -n "${ETICON_PATH}_core.app" --args "$PWD"
+        ETICON_PATH=$(which eticon)
+    length=${#ETICON_PATH}
+    MAIN_PATH=${ETICON_PATH:0:length-6}
+    open -n "${ETICON_PATH}ETICON Core.app" --args "$PWD"
 fi
     exit 1
 fi
