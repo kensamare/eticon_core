@@ -29,7 +29,8 @@ fi
 
 if [[ "${subcommand}" == "update" ]]; then
     ETICON_PATH=$(which eticon)
-    MAIN_PATH=${ETICON_PATH::-6}
+    length=${#ETICON_PATH}
+    MAIN_PATH=${ETICON_PATH:0:length-6}
     cd $MAIN_PATH
     git pull
     exit 1
