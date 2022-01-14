@@ -42,7 +42,7 @@ if [[ "${subcommand}" == "open" ]]; then
         ETICON_PATH=$(which eticon)
     length=${#ETICON_PATH}
     MAIN_PATH=${ETICON_PATH:0:length-6}
-    open -n "${ETICON_PATH}/ETICON Core.app" --args "$PWD"
+    open -n "${MAIN_PATH}/ETICON Core.app" --args "$PWD"
 fi
     exit 1
 fi
