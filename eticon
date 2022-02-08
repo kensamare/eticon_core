@@ -32,7 +32,7 @@ if [[ "${subcommand}" == "update" ]]; then
     length=${#ETICON_PATH}
     MAIN_PATH=${ETICON_PATH:0:length-6}
     cd $MAIN_PATH
-    git pull
+    git pull --rebase
     exit 1
 fi
 
