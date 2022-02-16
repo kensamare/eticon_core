@@ -27,10 +27,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			it1G/QnDX+ackCDf06zKj8/8Zmw=
+			+JEbnbKpv/Wuk4wHRoQ77LazeNc=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"3bd3d574b295cd1b67cfaa693d0c9070d7cc2a81" or cdhash H"8add46fd09c35fe69c9020dfd3acca8fcffc666c"</string>
+			<string>cdhash H"6e07c53579ec4e7d4806ef56713c98759f80c82a" or cdhash H"f8911b9db2a9bff5ae938c0746843becb6b378d7"</string>
 		</dict>
 		<key>Frameworks/FlutterMacOS.framework</key>
 		<dict>
@@ -45,10 +45,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			24X4cT8yqXtfmdzeBgO5v7uInSA=
+			L95UhAQrw69iYNW0g+dgyZQnB2s=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"9e813f0b84db6924554593a92ff13cd55363d430" or cdhash H"db85f8713f32a97b5f99dcde0603b9bfbb889d20"</string>
+			<string>cdhash H"056d4cf18df1f0c3fdc183e90b0ef6d6f528ce11" or cdhash H"2fde5484042bc3af6260d5b483e760c99427076b"</string>
 		</dict>
 		<key>Frameworks/desktop_window.framework</key>
 		<dict>
@@ -234,10 +234,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			rbcE3ozN/myf7uAtF1N3eoUM7yU=
+			o47Yoe8yewO6h7PbiNKDCSyx2m8=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"63fd767dc2a418271f978449b36ee201646d1d9d" or cdhash H"adb704de8ccdfe6c9feee02d1753777a850cef25"</string>
+			<string>cdhash H"691e09ab1fe8b1009d6a3878692cdb661999d822" or cdhash H"a38ed8a1ef327b03ba87b3db88d283092cb1da6f"</string>
 		</dict>
 		<key>Frameworks/window_size.framework</key>
 		<dict>
