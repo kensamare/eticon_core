@@ -37,11 +37,14 @@ if [[ "${subcommand}" == "update" ]]; then
 fi
 
 if [[ "${subcommand}" == "open" ]]; then
-    echo "Open Start" 1>&2
     if [[ "$OS" == "OSX" ]]; then
         ETICON_PATH=$(which eticon)
     length=${#ETICON_PATH}
     MAIN_PATH=${ETICON_PATH:0:length-6}
+    echo "Check for updates" 1>&2
+    cd $MAIN_PATH
+    git pull --rebase
+    echo "Open Start" 1>&2
     open -n "${MAIN_PATH}/ETICON Core.app" --args "$PWD"
 fi
     exit 1
