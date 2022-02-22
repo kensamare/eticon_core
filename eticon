@@ -23,7 +23,7 @@ if [[ "${subcommand}" == "" ]]; then
 fi
 
 if [[ "${subcommand}" == "version" ]]; then
-    echo "ETICON Core v1.0.3-macOS"
+    echo "ETICON Core v1.1.0-macOS"
     exit 1
 fi
 
